@@ -8,123 +8,83 @@
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">      
+        
+
         <style>
-     
-            .our-team{
-                padding: 30px 0 40px;
-                background: #fff;
-                overflow: hidden;
-                position: relative;
-                
-            }
-            .our-team .pic{
-                width: 130px;
-                height: 130px;
-                margin-bottom: 50px;
-                position: relative;
-               
-               margin: auto;
-              
-            }
-    
-            .our-team .pic:before{
-                content:"";
-                width: 100%;
-                background: #004165;
-                position: absolute;
-                bottom: 135%;
-                right: 0;
-                left: 0;
-                transform: scale(3);
-                transition: all 0.3s linear 0s;
-            }
-    
-            .our-team:hover .pic:before{
-                height: 100%;
-            }
-    
-            .our-team .pic:after{
-                content: "";
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                background: #004165;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index:-1;
-               
-            }
-    
-            .our-team .pic img{
-                width: 100%;
-                height: auto;
-                border-radius: 50%;
-                transform: scale(1);
-                transition: all 0.9s ease 0s;
-            }
-            .our-team:hover .pic img{
-                box-shadow: 0 0 0 14px #f7f5ec;
-                transform: scale(0.7);
-            }
-    
-            .our-team .team-content{
-                padding-top: 30px;
-                margin-bottom: 30px;
-            }
-    
-            .our-team .title{
-                font-size: 22px;
-                font-weight: 700;
-                color: #4e5052;
-                letter-spacing: 1px;
-                text-transform: capitalize;
-                margin-bottom: 5px;
-                padding: 10px 10px 10px 10px;
-            }
-    
-            .our-team .post{
-                display: block;
-                font-size: 15px;
-                color: #4e5052;
-                text-transform: capitalize;
-                padding: 10px 10px 10px 10px;
-            }
-    
-            .our-team .social{
-                width: 100%;
-                padding: 0;
-                margin: 0;
-                background: #004165;
-                position: absolute;
-                bottom: -100px;
-                left: 0;
-                transition: all 0.5s ease;
-            }
-    
-            .our-team:hover .social{
-                bottom: 0;
-            }
-    
-    
-            .our-team .social li{
-                display: inline-block;
-            }
-            .our-team .social li a{
-                display: block;
-                padding: 10px;
-                font-size: 17px;
-                color: #fff;
-                transition: all 0.3s ease 0s;
-            }
-    
-            .our-team .social li a:hover{
-                color: #eb1768;
-                background: #f7f5ec;
-                text-decoration: none;
-            }
-    
+        .middle{
+            position: relative;
+            float: left;
+            
+}
+.card{
+  cursor: pointer;
+  width: 280px;
+  height: 380px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 100px;
+  align-items: center;
+  
+  
+
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  border: 10px solid #a9b2b1;
+}
+.front img{
+  height: 280px;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 16px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
         </style>
+
+
     </head>
     <body>
         <div class="logo">
@@ -144,175 +104,146 @@
             </div>
         </div>
         <div class="landing">
-            <div>Alone we can do so little, together we can do so much.</div>
+            <div style="font-weight: bold !important; ">Alone we can do so little, together we can do so much.</div>
         </div>
           <script src="app.js"></script>
 
-          <section class="pathwayarea">
-            <div class="container">
+        <div class="container" style="background-color: #772432; width: inherit;">
             
-                <!-- Page Heading -->
-                <h1 class="my-4">Executive Committee</h1>
+            <br><br>
 
-                
-
-
-    <br><br>
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\President.png">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Mrs. Sarika Chowdary</h3>
-                            <span class="post">President</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "" class="fa fa-facebook"></a></li>
-                            <li><a href = "" class="fa fa-twitter"></a></li>
-                            <li><a href = "" class="fa fa-instagram"></a></li>
-                            <li><a href = "" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-    
-    
-    
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\Vice President Education.png">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Abhiram Subramanian</h3>
-                            <span class="post">Vice-President Education</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "https://www.facebook.com/Abhiram1812" class="fa fa-facebook"></a></li>
-                            <li><a href = "twitter.com/AbhiramSubrama1/" class="fa fa-twitter"></a></li>
-                            <li><a href = "https://www.instagram.com/abhiram1812/" class="fa fa-instagram"></a></li>
-                            <li><a href = "https://www.linkedin.com/in/abhiram-subramanian-14189419b" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\Vice President Membership.png">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Divija Kurremula</h3>
-                            <span class="post">Vice-President Membership</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "" class="fa fa-facebook"></a></li>
-                            <li><a href = "" class="fa fa-twitter"></a></li>
-                            <li><a href = "" class="fa fa-instagram"></a></li>
-                            <li><a href = "" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\TM Kushal.JPG">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Y. Kushal Vidya Mohanji</h3>
-                            <span class="post">Vice-President Public Relations</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "" class="fa fa-facebook"></a></li>
-                            <li><a href = "https://twitter.com/mohanjiy" class="fa fa-twitter"></a></li>
-                            <li><a href = "" class="fa fa-instagram"></a></li>
-                            <li><a href = "https://www.linkedin.com/in/kushal-vidya-mohanji-yeluri-4843b4175/" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\Secretary.png">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Munipalle Sai Chaitanya</h3>
-                            <span class="post">Secretary</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "https://m.facebook.com/chaitanya.munipalle.7" class="fa fa-facebook"></a></li>
-                            <li><a href = "https://twitter.com/MunipalleC?s=09" class="fa fa-twitter"></a></li>
-                            <li><a href = "https://www.instagram.com/chaitu083/?hl=en" class="fa fa-instagram"></a></li>
-                            <li><a href = "https://www.linkedin.com/in/munipalle-sai-chaitanya-6b5725171" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\Treasurer.png">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Poori Ajith kumar</h3>
-                            <span class="post">Treasurer</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "https://www.facebook.com/profile.php?id=100005965124696" class="fa fa-facebook"></a></li>
-                            <li><a href = "https://mobile.twitter.com/ajithku57894082" class="fa fa-twitter"></a></li>
-                            <li><a href = "https://www.instagram.com/ajith16a/" class="fa fa-instagram"></a></li>
-                            <li><a href = "https://www.linkedin.com/in/ajith-kumar-b363311b1" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\Sergeant at arms.png">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Narishetty Rohith</h3>
-                            <span class="post">Sergeant At Arms</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "https://www.facebook.com/sai.rohith.92560281" class="fa fa-facebook"></a></li>
-                            <li><a href = "https://twitter.com/rohiththeriser?s=09" class="fa fa-twitter"></a></li>
-                            <li><a href = "https://www.instagram.com/rohiththeriser/" class="fa fa-instagram"></a></li>
-                            <li><a href = "https://www.linkedin.com/in/narishetty-rohith-4bb3b01b1" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src ="images\Team\Immediate Past President.png">
-                        </div>
-                        <div class="team-content">
-                            <h3 class ="title">Chandra Sekhar</h3>
-                            <span class="post">Immediate Past President</span>
-                        </div>
-                        <ul class="social">
-                            <li><a href = "" class="fa fa-facebook"></a></li>
-                            <li><a href = "" class="fa fa-twitter"></a></li>
-                            <li><a href = "" class="fa fa-instagram"></a></li>
-                            <li><a href = "" class="fa fa-linkedin"></a></li>
-                        </ul>
-                    </div>
-                </div>
-    
+            <h1 style="font-family: 'Poppins';text-align: center;font-weight: bold; color: #fff; ">Executive Committee</h1>
+            <br><br>
+              <div class="card middle">
+            <div class="front">
+              <img src="images/Team/President.png" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Mrs. Sarika Chowdary</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">President</p>
             </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"Toastmasters is'nt just a club. It is a process of metamorphosis. From a shy, scared individual to the one who leads, exudes confidence and is willing to go above and beyond. My journey with toastmasters is a little learning everyday, when I look back, I know I have come far. I have learnt to dedicate, devote time in self improvement and constant learning. Also sharpening my leadership skills along the journey"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card middle">
+            <div class="front">
+              <img src="images/Team/Vice President Education.png" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Abhiram Subramanian</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">Vice President Education</p>
+            </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+               
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"I have been a member of Anurag Toastmasters for over 6 months. My active participation in Toastmasters meetings and the zeal to improve myself has boosted my confidence, Public speaking skills, Managing skills. When I look back and compare myself now, I could see great difference in myself! For me a Toastmasters meeting is like badminton practice. I can sit on the bench learning new things or actively participate. The more I participate, the better I will get. Toastmasters has been a great investment and worthy for me."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card middle">
+            <div class="front">
+              <img src="images/Team/Vice President Membership.png" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Divija Kurremula</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">Vice President Membership</p>
+            </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"I have no stage fear. I am always comlimented for my voice. I love expressing. But i cannot give a speech for 5 minutes continuously. What will ever be the best place to improve my impromptu speaking skills, boost up confidence other than Toastmasters. I have been here for more than a year. When I turn back, I can see how I have built my personality with the help of mentors who are always kind to me. I really feel proud to be a Toastmaster."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card middle">
+            <div class="front">
+              <img src="images/Team/TM Kushal.jpg" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Y. Kushal Vidya Mohanji</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">Vice President Public Relations</p>
+            </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+               
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"Being new to Toastmasters, I loved how quickly I could improve myself in speaking. Whether it was a speech or a role play, I felt challenging ,in positive way. I found the atmosphere in Toastmasters as friendly, supportive and encouraging. The feedback I have received has helped me gain confidence and refine my public speaking skills in a short period of time."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card middle">
+            <div class="front">
+              <img src="images/Team/Secretary.png" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Munipalle Sai Chaitanya</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">Secretary</p>
+            </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"Out of curiosity to know what the word Toastmasters means, I attended one of the meetings of our club Anurag Toastmasters. That was the day when I thought this was what I was looking for. I was successful in eliminating my fear of the stage. After a delightful journey of one and a half years as a Toastmaster, I could observe my confidence levels boosted drastically. As a Toastmaster, I got to hang out with people with exceptional public speaking skills who were kind enough to guide me whenever I got struck."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card middle">
+            <div class="front">
+              <img src="images/Team/Treasurer.png" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Poori Ajith Kumar</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">Treasurer</p>
+            </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"Public speaking is essential, tells everyone, but having a platform to develop, it was not easy which Toastmasters have provided me with. Its been few months in Toastmasters and I am able to overcome my greatest fear of stage which is made possible by the stressless, friendly and cheering atmosphere. I have made amazing friends who helped to push my limits and made me take up role which I never thought I can."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card middle">
+            <div class="front">
+              <img src="images/Team/Sergeant At Arms.png" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Narishetty Rohith</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">Sergeant At Arms</p>
+            </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"Toastmasters helped me improve my communication skills in a safe, encouraging and supportive environment. I have improved in listening, critical thinking, giving feedback, time management, planning and implementation. I could achieve many leadership skills through Toastmasters meetings."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card middle">
+            <div class="front">
+              <img src="images/Team/Immediate Past President.png" alt="">
+              <h2 style="font-family: 'Poppins'; text-align: center; font-size: 20px; font-weight: bold;">Chandra Sekhar</h2>
+              <p style="font-family: 'Poppins';  font-size: 16px;  font-weight: bold; text-align: center;">Immediate Past President</p>
+            </div>
+            <div class="back">
+              <div class="back-content middle" style="top: 10%;">
+                <div class="sm">
+                    <p style="font-family: 'Poppins';font-weight: bold;">"I still remember the first time when I was trembling to speak on stage. Speaking two words seemed like a impossible task to me. But ever since I joined Toastmasters, everything started to change. It has given me a stage to experiment, a stage to grow, a stage which has made a better person than who I was and ultimately a stage which gave me so many memories which I will cherish my entire life."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+       
         </div>
-    </section>  
-    </div>
-    </section>
+
+        
+    
+
+
+   
+
 
       
     <footer id="footer">
