@@ -1,0 +1,323 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html{
+    font-family: "Poppins";
+}
+.nav{
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 90px;
+    line-height: 90px;
+}
+.menu{
+    margin: 0 30px 0 0;
+}
+.menu a{
+    clear: right;
+    text-decoration: none !important;
+    color:#000;
+    margin: 0 10px;
+    line-height: 90px;
+    font-weight: bold;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 90px;
+    display: none !important;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none !important;
+}
+.logo img{
+	width: 300px;
+	float: left;
+	height: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.menu a:hover{
+    background: #772432;
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+#ctd{
+    background: linear-gradient(0deg, rgba(242,223,116,1) 55%, rgba(255,255,255,1) 100%);
+ }
+ #ctd .box{
+   padding: 30px 20px;
+ }
+ #ctd h1{
+ color: #000;
+ font-weight: 100;
+ font-size: 40px;
+   text-align: center;
+ font-family: "Poppins";
+   margin-bottom: 30px;
+   margin-top: 20px;
+ }
+ 
+ #clockdiv{
+   font-family: "Poppins";
+   color: #fff;
+   display: inline-block;
+   font-weight: 100;
+   text-align: center;
+   margin-bottom: 40px;
+   font-size: 30px;
+ }
+ 
+ #clockdiv > div{
+   padding: 10px;
+   border-radius: 3px;
+   background: #004165;
+   display: inline-block;
+   margin-bottom: 40px;
+ }
+ 
+ #clockdiv div > span{
+   padding: 15px;
+   border-radius: 3px;
+   background: #a9b2b1;
+   display: inline-block;
+ }
+ 
+ .smalltext{
+   padding-top: 5px;
+   font-size: 16px;
+ }
+
+ #footer {
+    background: #000;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+    }
+    
+    #footer .footer-top {
+    background: #111;
+    padding: 60px 0 30px 0;
+    }
+    
+    #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+    }
+    
+    #footer .footer-top .footer-info h3 {
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 10px;
+    line-height: 1;
+    font-family: "Poppins";
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-left: 4px solid #cd202c;
+    }
+    
+    #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Poppins";
+    color: #fff;
+    }
+    
+    #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #eee;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    }
+    
+    #footer .footer-top .social-links a:hover {
+    background: #fff;
+    color: #fff;
+    }
+    
+    #footer .footer-top h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    }
+    
+    #footer .footer-top h4::before,
+    #footer .footer-top h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    }
+    
+    #footer .footer-top h4::before {
+    right: 0;
+    background: #555;
+    }
+    
+    #footer .footer-top h4::after {
+    background: #cd202c;
+    width: 60px;
+    }
+    
+    #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+    }
+    
+    #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    #footer .footer-top .footer-links ul i {
+    padding-right: 8px;
+    color: #ddd;
+    }
+    
+    #footer .footer-top .footer-links ul li {
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+    font-family: "Poppins";
+    }
+    
+    #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+    }
+    
+    #footer .footer-top .footer-links ul a {
+    color: #eee;
+    }
+    
+    #footer .footer-top .footer-links ul a:hover {
+    color: #fff;
+    }
+    
+    #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+    font-family: "Poppins";
+    }
+    
+    #footer .footer-top .footer-contact p {
+    line-height: 26px;
+    font-family: "Poppins";
+    }
+    
+    #footer .footer-top .footer-newsletter {
+    margin-bottom: 30px;
+    font-family: "Poppins";
+    }
+    
+    #footer .footer-top .footer-newsletter input[type="email"] {
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+    font-family: "Poppins";
+    }
+    
+    #footer .footer-top .footer-newsletter input[type="submit"] {
+    background: #cd202c;
+    border: 0;
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: "Poppins";
+    }
+    
+
+.landing {
+    background: linear-gradient(0deg, rgba(242,223,116,1) 55%, rgba(255,255,255,1) 100%);
+    height: 90vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+      width: 100%;
+    align-items: center;
+    
+  }
+  
+  .landing h1 {
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: #000;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+  .landing div{
+    position: absolute;
+    top:70%;
+    transform: translateY(-50%);
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000;
+    margin-left: 10px;
+  }
+
+  #tm-section-2,
+#tm-section-6 {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(0deg, rgba(105,33,45,1) 45%, rgba(137,44,59,1) 100%);
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+@media only screen and (max-width: 500px){
+    label{
+        display: block !important;
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        color: #772432;
+        
+    }
+
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        position: relative;
+        z-index: 50;
+        background: #f2df74;
+        
+    }
+    #toggle:checked ~ .menu{
+        display: block;
+    }
+
+    .landing{
+            position: relative;
+            width: 100%;
+            z-index: 30;
+    }
+
+
+
+}
